@@ -13,19 +13,13 @@
     <h3 class="card-title text-center mb-4"id="title">Multistep Form</h3>
     <!-- form starrs here -->
     <form id="form" action="https://formsubmit.co/6fe513341364a8c30e8f58df37b51065" method="POST">
-      <div id="step1">
-        <input type="text" id="firstname" name="name" placeholder="Enter your First name" >
-        <input type="text" id="lastname" name="lastname" placeholder="Enter your Last name" >
-      </div>
-      <div id="step2" class="none">
-        <input type="email" id="email" name="email"placeholder="Enter Your Email Address" >
-        <input type="tel" id="tel" name="Phone" placeholder="Enter your Phone Number" >
-      </div>
-      <div id="step3" class="none">
+        <input type="text" id="firstname" class="step1" name="name" placeholder="Enter your First name" >
+        <input type="text" id="lastname" class="step1" name="lastname" placeholder="Enter your Last name" >
+        <input type="email" id="email" class="step2  none" name="email"placeholder="Enter Your Email Address" >
+        <input type="tel" id="tel" class="step2 none" name="Phone" placeholder="Enter your Phone Number" >
         <label for="" id="error" class="none"></label>
-        <input type="password" id="pass" placeholder="Password" >
-        <input type="password" id="cpass" placeholder="Confirm Password" >
-      </div>
+        <input type="password" class="step3 none" id="pass" placeholder="Password" >
+        <input type="password" class="step3 none" id="cpass" placeholder="Confirm Password" >
       <div id="stepNavigation" class="text-center">
         <button class="btn btn-primary none"  type="button" id="prevbtn">Previous</button>
         <button class="btn btn-primary"  type="button" id="nextbtn">Next</button>

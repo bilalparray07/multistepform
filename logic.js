@@ -2,16 +2,16 @@ $(document).ready(function(){
   
     let steps = 1;
     function goBack(){
-        $('#step'+steps).addClass('none');
+        $('.step'+steps).addClass('none');
         steps--;
-        $('#step'+steps).removeClass('none');
+        $('.step'+steps).removeClass('none');
         changeBtn()
     }
     function goNext(){
         if(validateInputs()){
-            $('#step'+steps).addClass('none');
+            $('.step'+steps).addClass('none');
             steps++; 
-            $('#step'+steps).removeClass('none');
+            $('.step'+steps).removeClass('none');
             changeBtn()
         }
     }
